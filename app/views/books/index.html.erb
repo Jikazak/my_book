@@ -29,7 +29,7 @@
         <td><%= book.isbn %></td>
         <td><%= link_to '表示', book, class:"btn btn-default btn-xs"%></td>
         <td><%= link_to '編集', edit_book_path(book), class:"btn btn-default btn-xs" %></td>
-        <td><%= link_to '', book, method: :delete, data: { confirm: '本当に削除して良いですか?' }, class:"btn btn-default btn-xs" %></td>
+        <td><%= link_to '削除', book, method: :delete, data: { confirm: '本当に削除して良いですか?' }, class:"btn btn-default btn-xs" %></td>
       </tr>
     <% end %>
   </tbody>
